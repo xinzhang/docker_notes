@@ -10,3 +10,6 @@ docker stop xxx
 
 docker rm $(docker ps -a -q)
 
+docker build -t tag/node .
+
+docker run -d -p 8080:3000 tag/node
